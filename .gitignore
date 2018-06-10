@@ -1,0 +1,9 @@
+client_secret.json 
+bankContacts.csv
+clients.csv
+mydata.csv
+invoice.py
+invoiceNO.csv
+.DS_Store
+myEmailData.csv
+invoices/
