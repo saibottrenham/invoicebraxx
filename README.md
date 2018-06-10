@@ -34,12 +34,12 @@ becomes:
 
 ## Config
 The ongoing invoice number can be set inside invoiceNOExample.csv
-the increment rate can be edited on line 29 inside invoiceYou.py
+the increment rate can be edited on line 71 inside invoiceYou.py
 
 The Date is set for the day of invoice generation.
 The Due Date is creation date plus 7 days.
 
-It can be changed on line 16 inside invoiceYou.py
+It can be changed on line 55 inside invoiceYou.py
 
 Bank contacts are stored inside 
 bankContactsExample.csv
@@ -52,7 +52,7 @@ Remember to enable your SMTP service if you want it to use with email functional
 
 Note:
 if you want to proof read your Invoice before sending them out to a client, you can easily sent them 
-to yourself and then forward them
+to yourself and then forward them until a preview functionality is not setup
 
 
 ## how to run
@@ -67,7 +67,10 @@ Example:
 ## todo and next steps
 
 further development includes
-* create multi line Item functionality
+
+* preview functionality
+* input prompting maybe
+* create multi line Item functionality (multi page invoices)
 * set up tax options
 * cleaning up, refactoring this big monolithic clusterf***
 * implementing inside a webapplication, possibly django
