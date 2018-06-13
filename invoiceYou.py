@@ -171,7 +171,7 @@ f.close()
 
 msgRoot = MIMEMultipart('mixed')
 
-subject = varsDict['myName']+"Invoice: #"+str(newInvoice)
+subject = varsDict['myName']+" Invoice: #"+str(newInvoice)
 msgRoot['Subject'] = subject
 msgRoot['From'] = varsDict['myEmail']
 msgRoot['To'] = varsDict['clientEmail']
