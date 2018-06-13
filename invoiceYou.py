@@ -139,7 +139,7 @@ file_list = result["files"]
 
 
 while "nextPageToken" in result:
-    result = self.get_service().files().list(pageToken=result["nextPageToken"]                                             ).execute()
+    result = self.get_service().files().list(pageToken=result["nextPageToken"]).execute()
     file_list = file_list + result["files"]
 
 

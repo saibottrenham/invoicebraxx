@@ -61,7 +61,7 @@ to yourself and then forward them until a preview functionality is not setup
 
 Example:
 
-	python invoiceMe.py 'toby' 'mrOne' 150 10 'Webdevelopment and consulting'
+	python invoiceYou.py 'toby' 'mrOne' 150 10 'Webdevelopment and consulting'
 
 
 ## todo and next steps
@@ -69,6 +69,7 @@ Example:
 further development includes
 
 * preview functionality
+* code execution via voice command
 * input prompting maybe
 * create multi line Item functionality (multi page invoices)
 * set up tax options
