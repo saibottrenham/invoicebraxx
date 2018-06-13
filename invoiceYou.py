@@ -1,5 +1,5 @@
 """
-Invocing script
+Invoicing script
 Author: Tobias Mahnert
 Date: 10.06.2018
 """
