@@ -57,11 +57,43 @@ to yourself and then forward them until a preview functionality is not setup
 
 ## how to run
 
-	python invoiceYou.py myNickName cleintNickName  rate qty item
+	python invoiceYou.py
 
-Example:
+The Script will ask you several questions e.g.
 
-	python invoiceYou.py 'toby' 'mrOne' 150 10 'Webdevelopment and consulting'
+	Select from the options below:
+
+	profile1
+	profile2
+	profile3
+	...
+
+	Please Select Your NickName: profile1
+	Select from the options below:
+
+	client1
+	client2
+	client3
+	...
+
+	Please Select Clients Name: client1
+	What is your Rate? Please only Numbers: 150
+	What is your QTY? Please only Numbers: 6
+	What kind of Work?: webdevelopment and consulting
+	about to get all the info
+	about to initiate connection to google
+	found the template
+	finished
+
+## update log
+
+### 26.06.2018
+
+ - added input prompt so that user's dont have to recall their clients and nicknames from memory
+
+### 10.06.2018
+
+ - initial commit
 
 
 ## todo and next steps
@@ -70,7 +102,6 @@ further development includes
 
 * preview functionality
 * code execution via voice command
-* input prompting maybe
 * create multi line Item functionality (multi page invoices)
 * set up tax options
 * cleaning up, refactoring this big monolithic clusterf***

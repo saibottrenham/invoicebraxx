@@ -50,6 +50,27 @@ def attachEmailImages(image, imgref):
 	msgImage.add_header('Content-ID', '<'+imgref+'>')
 	msgRoot.attach(msgImage)
 
+def getValues(selectedCSV, selectedColumn):
+	clientsDF = pd.read_csv(selectedCSV)
+	valuesList = clientsDF[selectedColumn].tolist()
+	return valuesList
+
+
+def printFunction(valuesList):
+	print('Select from the options below:\n')
+	for i in valuesList:
+		print(i)
+	print('\n')
+	return
+
+
+def untilValidInput(valuesList, prompt):
+	printFunction(valuesList)
+	while True:
+		userInput = raw_input(prompt)
+		if userInput in valuesList:
+			return userInput 
+
 
 start_date = datetime.datetime.today()
 end_date = start_date + datetime.timedelta(days=7)
@@ -57,11 +78,19 @@ end_date = start_date + datetime.timedelta(days=7)
 
 # load the UserInput
 reqs = []
-myNickName = sys.argv[1]
-clientNickname = sys.argv[2]
-rate = float(sys.argv[3])
-qty = float(sys.argv[4])
-item = sys.argv[5]
+
+# get nickname out of a list of available nicknames
+clientsList = getValues('exampleCSV/mydataExample.csv', 'myNickName')
+myNickName = untilValidInput(clientsList, 'Please Select Your NickName: ')
+
+# get Clientsname from list of available usernames
+clientsList = getValues('exampleCSV/clientsExample.csv', 'cleintNickName')
+clientNickname = untilValidInput(clientsList, 'Please Select Clients Name: ')
+
+# get the rest of the vars
+rate = float(raw_input('What is your Rate? Please only Numbers: '))
+qty = float(raw_input('What is your QTY? Please only Numbers: '))
+item = raw_input('What kind of Work?: ')
 
 
 # get latest invoive NO and append a new one
