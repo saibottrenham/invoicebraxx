@@ -76,16 +76,28 @@ The Script will ask you several questions e.g.
 	client3
 	...
 
-	Please Select Clients Name: client1
-	What is your Rate? Please only Numbers: 150
-	What is your QTY? Please only Numbers: 6
-	What kind of Work?: webdevelopment and consulting
+	What is your Rate? Please only Numbers: 240
+	What is your QTY? Please only Numbers: 10
+	What kind of Work?: Webdevelopment and Consulting
+	Add Another Item? press enter to continue. To exit type no : 
+	What is your Rate? Please only Numbers: 100
+	What is your QTY? Please only Numbers: 1
+	What kind of Work?: New Website Template
+	Add Another Item? press enter to continue. To exit type no : no
 	about to get all the info
 	about to initiate connection to google
 	found the template
+	PDF Generation Finished, next up Sending the Email
 	finished
 
 ## update log
+
+### 07.07.2018
+
+- added light version of multiline input. Changed the template slightly for that functionality to happen.
+- In order for that to work I created a few more input prompts that ask for all the line items one by one.
+- maybe needs some improvement in terms of input efficency in the future. Probably when setting up a web 
+- Frontend
 
 ### 26.06.2018
 
@@ -102,7 +114,7 @@ further development includes
 
 * preview functionality
 * code execution via voice command
-* create multi line Item functionality (multi page invoices)
+* multi page invoices if more then 10 line items
 * set up tax options
 * cleaning up, refactoring this big monolithic clusterf***
 * implementing inside a webapplication, possibly django
